@@ -6,6 +6,7 @@ export function calculateBudgetStatus(totalExpense: number, budget: number){
     return "Sobre pressupost ⚠️"
 }
 
+//tests
 console.log(calculateBudgetStatus(600, 1000))
 console.log(calculateBudgetStatus(900, 1000))
 console.log(calculateBudgetStatus(1200, 1000))
