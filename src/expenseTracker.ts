@@ -12,7 +12,7 @@ export interface ExpenseReport {
 
 export function generateExpenseReport(dailyExpenses: number[], dailyBudget: number): ExpenseReport{
     
-    if(dailyExpenses.some(exp => exp < 0)){
+    if(dailyExpenses.some(exp => exp < 0 || isNaN(exp))){
         throw new Error ('Les despeses no poden ser negatives')
     }
 
